@@ -1,0 +1,28 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Documento</th>
+            <th scope="col">Nombres y apellidos</th>
+            <th scope="col">Fecha inicio</th>
+            <th scope="col">Fecha fin</th>
+            <th scope="col">Horario inicio de turno</th>
+            <th scope="col">Horario fin turno</th>
+            <th scope="col">Horario inicio hora extra</th>
+            <th scope="col">Horario fin hora extra</th>
+            <th scope="col">Motivo hora extra</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let extra of extras">
+            <th scope="row">{{extra.doc}}</th>
+            <td>{{extra.name}}</td>
+            <td>{{extra.finicio}}</td>
+            <td>{{extra.ffin}}</td>
+            <td>{{extra.hturno}}</td>
+            <td>{{extra.hfinturno}}</td>
+            <td>{{extra.hextra}}</td>
+            <td>{{extra.hfinextra}}</td>
+            <td>{{extra.motivo}}</td>
+        </tr>
+    </tbody>
+</table>
